@@ -33,11 +33,11 @@ void drawFigures() {
   for(int i = 0; i < (width / gridCircleWidth); i ++) {
     for(int j = 0; j < (height / gridCircleHeight); j ++) {
       if((i+j) % 3 == 0) {
-          drawRects(gridCircleWidth*i, gridCircleHeight*j, circleDownArms, circleDownNose); //blauw + donkeroranje
-          drawArc(50 + gridCircleWidth*i, 50 + gridCircleHeight*j, circleDownBeard, "BEARD"); //roos
+          drawRects(gridCircleWidth*i, gridCircleHeight*j, circleDownArms, circleDownNose); 
+          drawArc(50 + gridCircleWidth*i, 50 + gridCircleHeight*j, circleDownBeard, "BEARD"); 
           drawCircle(50 + gridCircleWidth*i, 50 + gridCircleHeight*j, circleDown);
       } else if((i+j) % 3 == 1) {
-          drawRects(gridCircleWidth*i, 50 + gridCircleHeight*j, circleUpArms, circleUpNose); //geel + roos
+          drawRects(gridCircleWidth*i, 50 + gridCircleHeight*j, circleUpArms, circleUpNose); 
           drawArc(50 + gridCircleWidth*i, 50 + gridCircleHeight*j, circleUpHear, "HEAR"); 
           drawCircle(50 + gridCircleWidth*i, 50 + gridCircleHeight*j, circleUp);
       } else {
